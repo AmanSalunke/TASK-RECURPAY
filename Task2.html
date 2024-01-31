@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div>
+      <div
+        class="row"
+        style="
+          justify-content: center;
+          display: flex;
+          margin-right: 0px;
+          margin-left: 0px;
+        "
+      >
+        <div class="col-lg-4 col-xs-12 col-md-6 col-sm-10">
+          <img src="./Shirt.jpeg"  style="height: 500px; width: 500px;
+          margin-top: 100px;">
+        </div>
+        <div class="col-lg-4 col-xs-12 col-md-6 col-sm-10">
+          <h2 style="margin-top: 100px; margin-left: 100px">
+            CLASSIC DENIM SHIRT
+          </h2>
+          <br />
+          <div style="display: flex">
+            <img
+              src="./star.jpeg"
+              alt=""
+              style="height: 30px; margin-left: 170px"
+            />
+            <p style="margin-top: 4px">23 reviews</p>
+          </div>
+          <br />
+         
+          <div class="row"></div>
+         
+          <div class="row"></div>
+
+          <br />
+          <div style="border: 1px solid black">
+            <h4 style="display: flex; justify-content: center">
+              CHECK FOR AVAILABILITY
+            </h4>
+            <br />
+            <div style="display: flex; margin-left: 58px">
+              <label for="quantityInput" style="margin-top: 5px"
+                >Quantity:</label
+              >
+              <input
+                type="number"
+                id="quantityInput"
+                value="1"
+                min="1"
+                style="margin-left: 6px"
+              />
+              <p style="margin-left: 5px">
+                Total Amount: Rs <span id="totalAmount">10</span>
+              </p>
+
+              <script>
+                const quantityInput = document.querySelector("#quantityInput");
+                const totalAmountElement =
+                  document.querySelector("#totalAmount");
+
+                const pricePerItem = 2599; // Set your price per item here
+
+                function updateTotalAmount() {
+                  const quantity = parseInt(quantityInput.value, 10);
+                  const totalAmount = quantity * pricePerItem;
+                  totalAmountElement.textContent = totalAmount.toFixed(2); // Display total with two decimal places
+                }
+
+                quantityInput.addEventListener("input", updateTotalAmount);
+
+                // Initial update
+                updateTotalAmount();
+              </script>
+            </div>
+            <br />
+            <div style="display: flex; margin-left: 58px">
+              <label for="pincode">PINCODE:</label>
+
+              <input
+                type="text"
+                id="pincodeInput"
+                placeholder="Enter Pincode"
+                maxlength="6"
+              />
+              <button id="verifyButton" style="margin-left: 20px">
+                Verify
+              </button>
+              <button id="addToCartButton" disabled style="margin-left: 20px">
+                Add to Cart
+              </button>
+              <p id="message"></p>
+
+              <script>
+                const addToCartButton =
+                  document.querySelector("#addToCartButton");
+                const verifyButton = document.querySelector("#verifyButton");
+                const pincodeInput = document.querySelector("#pincodeInput");
+                const messageElement = document.querySelector("#message");
+
+                const ineligiblePincodes = [560017, 560018, 560019, 560020];
+
+                addToCartButton.disabled = true;
+
+                verifyButton.addEventListener("click", () => {
+                  const pincode = pincodeInput.value.trim();
+
+                  if (!pincode) {
+                    showMessage("Please enter a pincode.");
+                    return;
+                  }
+
+                  const isEligible = !ineligiblePincodes.includes(
+                    parseInt(pincode)
+                  );
+                  showMessage(
+                    isEligible
+                      ? "You are eligible for COD!"
+                      : "Sorry, You are not eligible for COD."
+                  );
+                  addToCartButton.disabled = !isEligible;
+                });
+
+                function showMessage(message) {
+                  messageElement.textContent = message;
+                }
+              </script>
+            </div>
+            <br />
+          </div>
+          <br />
+          <div class="row"></div>
+          <br />
+          <div style="display: flex; justify-content: center">
+            <div style="display: flex">
+              <img src="./Facebook.jpeg" alt="" style="height: 30px; width: 30px" />
+              <p style="margin-top: 6px">SHARE</p>
+            </div>
+            <div style="display: flex; margin-left: 35px">
+              <img src="./tweet.jpeg" alt="" style="height: 30px; width: 30px" />
+              <p style="margin-top: 6px">TWEET</p>
+            </div>
+            <div style="display: flex; margin-left: 35px">
+              <img src="./pin.jpeg" alt="" style="height: 30px; width: 30px" />
+              <p style="margin-top: 6px">PIN</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
