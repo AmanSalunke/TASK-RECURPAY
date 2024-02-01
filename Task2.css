@@ -1,0 +1,133 @@
+.row{
+    justify-content: center;
+    display: flex;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.img-shirt{
+    height: 300px;
+    width: 300px;
+    margin-top: 170px;
+   
+}
+h2{
+    margin-top: 100px;
+    margin-left: 100px
+}
+.star{
+    display: flex;
+}
+.star1{
+    height: 30px; 
+    margin-left: 170px;
+}
+p{
+    margin-top: 4px;
+}
+.box1{
+    border: 1px solid black;
+    width: 140%;
+    margin-right: 450px;
+}
+h5{
+    display: flex; 
+    justify-content: center;
+    margin-right: 150px;
+}
+.box2{
+    display: flex; 
+    margin-left: 58px;
+}
+
+.lab1{
+    margin-top: 5px;
+    margin-left: 60px;
+}
+.imp{
+    margin-left: 180px;
+  
+}
+.imp2{
+    margin-left: 100px;
+    width: 320px;
+    border: none;
+    padding: 6px;
+}
+
+p{
+    margin-left: 5px;
+}
+
+.box3{
+    display: flex; 
+    margin-left: 58px;
+}
+.verify{
+    
+    width: 80px;
+    padding: 4px;
+    background-color:white
+   
+}
+.verify10{
+    width: 450px;
+    position: relative;
+    border: 1px solid black;
+    padding: 10px;
+}
+.footericon{
+    height: 30px; 
+    width: 30px;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+}
+p{
+    margin-top: 6px;
+}
+.icon1{
+    display: flex;
+    margin-left: 200px;
+    height: 20px;
+   
+}
+
+.icon2{
+    margin-left: 60px;
+    display: flex;
+
+}
+.icon3{
+    margin-left: 60px;
+    display: flex;
+}
+
+.box5{
+    display: flex;
+    justify-content: center;
+}
+.price{
+    margin-left: 220px;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
