@@ -1,0 +1,163 @@
+
+.row{
+    justify-content: center;
+    display: flex;
+    margin-right: 0px;
+    margin-left: 0px;
+
+}
+.img-shirt{
+    height: 300px;
+    width: 300px;
+    margin-top: 150px;
+    margin-left: 150px;
+   
+}
+h2{
+    margin-top: 100px;
+    margin-left: 100px;
+    font-style: normal;
+    
+   
+}
+.star{
+    display: flex;   
+}
+
+.star1{
+    height: 25px; 
+    width: 90px;
+    margin-left: 190px;
+    margin-top: 3px ;
+   
+}
+
+p{
+    margin-top: 4px;
+}
+.box1{
+    /* border: 1px solid black; */
+    width: 180%;
+    margin-right: 450px;
+}
+h5{
+    display: flex; 
+    justify-content: center;
+    margin-right: 320px;
+}
+.box2{
+    display: flex; 
+    margin-left: 58px;
+    
+}
+
+.lab1{
+    margin-top: 5px;
+    margin-left: 60px;
+}
+.imp{
+    margin-left: 220px;
+    width: 100px;
+    text-align: center;
+  
+}
+.imp2{
+    margin-left: 100px;
+    width: 320px;
+    border: none;
+    padding: 6px;
+    text-align: center;
+}
+
+p{
+    margin-left: 5px;
+}
+
+.box3{
+    display: flex; 
+    margin-left: 58px;
+}
+.verify{
+    
+    width: 80px;
+    padding: 4px;
+    background-color:white;
+    margin-bottom: 28px;
+    
+   
+}
+.verify10{
+    width: 450px;
+    border: 1px solid black;
+    padding: 10px; 
+    padding-right: 80px ;
+}
+
+
+
+.footericon{
+    height: 15px; 
+    width: 15px;
+    margin-top: 6px;
+}
+
+.name{
+    font-size: 12px;
+}
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+}
+
+p{
+    margin-top: 6px;
+}
+
+.icon1{
+    display: flex;
+    margin-left: 120px;  
+}
+
+.icon2{
+    margin-left: 60px;
+    display: flex;
+
+}
+.icon3{
+    margin-left: 60px;
+    display: flex;
+}
+
+.box5{
+    display: flex;
+    justify-content: center;
+}
+.price{
+    margin-left: 310px;
+    position: absolute;
+    padding-top: 5px ;   
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
